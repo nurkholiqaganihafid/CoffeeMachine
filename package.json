@@ -13,5 +13,8 @@
     "url": "CoffeeMachine"
   },
   "author": "Nurkholiq Agani Hafid",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

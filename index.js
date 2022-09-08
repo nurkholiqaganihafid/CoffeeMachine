@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { hewan, isFourLegs as berkakiEmpat } from './animal.js';
 // const { coffeeStock, isCoffeeMachineReady } = require('./state')
 
@@ -39,3 +40,17 @@ console.log();
 console.log(hewan);
 
 console.log(`Hewan berkaki empat ${berkakiEmpat}`);
+console.log();
+
+const myArray = [1, 2, 3, 4]
+let sum = 0
+
+// don't use lodash
+for (let i = 0; i < myArray.length; i++) {
+    sum += myArray[i];
+}
+console.log(`Tanpa lodash = ${sum}`);
+
+// using lodash
+const result = _.sum(myArray)
+console.log(`Dengan menggunakan lodash = ${result}`);
