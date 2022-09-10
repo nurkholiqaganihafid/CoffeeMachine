@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { hewan, isFourLegs as berkakiEmpat } from './animal.js';
+import { coffeeIngredients, coffeeShop as kedaiKopi } from './ingredients.js';
 // const { coffeeStock, isCoffeeMachineReady } = require('./state')
 
 console.log("Menyalakan mesin kopi");
@@ -27,19 +27,19 @@ console.log("Kopi Anda sudah siap!")
 // console.log();
 // console.log(isCoffeeMachineReady);
 
-const animalName = name => {
+const readyIngredients = name => {
     for (const type in name) {
         console.log(type);
     }
 }
 
 console.log();
-animalName(hewan)
+readyIngredients(coffeeIngredients)
 
 console.log();
-console.log(hewan);
+console.log(coffeeIngredients);
 
-console.log(`Hewan berkaki empat ${berkakiEmpat}`);
+console.log(`Apakah kedai kopi buka ${kedaiKopi}`);
 console.log();
 
 const myArray = [1, 2, 3, 4]
